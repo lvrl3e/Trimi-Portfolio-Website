@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, Code } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./icons/BrandIcons";
 import { useActiveSection } from "../hooks/useActiveSection";
+import ThemeToggle from "./ThemeToggle";
 
 const NAV_LINKS = [
   { label: "Home", id: "home" },
@@ -45,7 +46,7 @@ export default function Navbar() {
   return (
     <header
       className={`fixed top-0 inset-x-0 z-50 transition-all duration-300 ${
-        scrolled ? "glass border-b border-white/5 py-3" : "bg-transparent py-5"
+        scrolled ? "glass border-b border-border-subtle-2 py-3" : "bg-transparent py-5"
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between px-6">
@@ -55,7 +56,7 @@ export default function Navbar() {
             e.preventDefault();
             handleNavClick("home");
           }}
-          className="flex items-center gap-1.5 text-lg font-bold tracking-tight text-white"
+          className="flex items-center gap-1.5 text-lg font-bold tracking-tight text-fg"
         >
           Trimi
           <span className="text-gradient font-mono">{"</>"}</span>
@@ -68,7 +69,7 @@ export default function Navbar() {
                 <button
                   onClick={() => handleNavClick(link.id)}
                   className={`relative py-1 text-sm font-medium transition-colors duration-200 ${
-                    active === link.id ? "text-white" : "text-slate-400 hover:text-white"
+                    active === link.id ? "text-fg" : "text-fg-muted hover:text-fg"
                   }`}
                 >
                   {link.label}
@@ -82,13 +83,13 @@ export default function Navbar() {
             ))}
           </ul>
 
-          <div className="flex items-center gap-4 border-l border-white/10 pl-6">
+          <div className="flex items-center gap-4 border-l border-border-subtle pl-6">
             <a
               href={SOCIAL_LINKS.github}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="text-slate-400 transition-colors hover:text-white"
+              className="text-fg-muted transition-colors hover:text-fg"
             >
               <GithubIcon size={18} />
             </a>
@@ -97,10 +98,11 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="text-slate-400 transition-colors hover:text-white"
+              className="text-fg-muted transition-colors hover:text-fg"
             >
               <LinkedinIcon size={18} />
             </a>
+            <ThemeToggle />
             <button
               onClick={() => handleNavClick("contact")}
               className="rounded-full bg-gradient-to-r from-blue to-violet px-4 py-2 text-sm font-semibold text-white shadow-[0_0_20px_rgba(139,92,246,0.35)] transition-all duration-300 hover:shadow-[0_0_28px_rgba(139,92,246,0.55)] hover:scale-105"
@@ -110,13 +112,16 @@ export default function Navbar() {
           </div>
         </div>
 
-        <button
-          className="text-slate-200 md:hidden"
-          onClick={() => setMenuOpen((v) => !v)}
-          aria-label="Toggle menu"
-        >
-          {menuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
+        <div className="flex items-center gap-3 md:hidden">
+          <ThemeToggle />
+          <button
+            className="text-fg-secondary"
+            onClick={() => setMenuOpen((v) => !v)}
+            aria-label="Toggle menu"
+          >
+            {menuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
+        </div>
       </nav>
 
       <div
@@ -124,28 +129,28 @@ export default function Navbar() {
           menuOpen ? "max-h-[420px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="glass mx-4 mt-3 flex flex-col gap-1 rounded-2xl border border-white/10 p-4">
+        <div className="glass mx-4 mt-3 flex flex-col gap-1 rounded-2xl border border-border-subtle p-4">
           {NAV_LINKS.map((link) => (
             <button
               key={link.id}
               onClick={() => handleNavClick(link.id)}
               className={`rounded-lg px-3 py-3 text-left text-base font-medium transition-colors ${
                 active === link.id
-                  ? "bg-white/5 text-white"
-                  : "text-slate-400 hover:bg-white/5 hover:text-white"
+                  ? "bg-tint-2 text-fg"
+                  : "text-fg-muted hover:bg-tint-2 hover:text-fg"
               }`}
             >
               {link.label}
             </button>
           ))}
-          <div className="mt-2 flex items-center justify-between border-t border-white/10 pt-4">
+          <div className="mt-2 flex items-center justify-between border-t border-border-subtle pt-4">
             <div className="flex items-center gap-5">
               <a
                 href={SOCIAL_LINKS.github}
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="GitHub"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-slate-300"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-border-subtle text-fg-secondary"
               >
                 <GithubIcon size={18} />
               </a>
@@ -154,11 +159,11 @@ export default function Navbar() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="flex h-11 w-11 items-center justify-center rounded-full border border-white/10 text-slate-300"
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-border-subtle text-fg-secondary"
               >
                 <LinkedinIcon size={18} />
               </a>
-              <Code size={18} className="text-slate-500" />
+              <Code size={18} className="text-fg-subtle" />
             </div>
             <button
               onClick={() => handleNavClick("contact")}

@@ -26,7 +26,7 @@ export default function StarField({ count = 70 }: { count?: number }) {
       {stars.map((star, i) => (
         <span
           key={i}
-          className="absolute rounded-full bg-white animate-glow-pulse"
+          className="absolute rounded-full bg-star animate-glow-pulse"
           style={{
             top: star.top,
             left: star.left,

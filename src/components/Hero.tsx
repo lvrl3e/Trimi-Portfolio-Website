@@ -47,7 +47,7 @@ export default function Hero() {
       <div className="relative z-10 mx-auto flex max-w-3xl flex-col items-center text-center">
         {/* Profile image */}
         <div className="relative mb-8 animate-float">
-          <div className="relative flex h-[150px] w-[150px] items-center justify-center overflow-hidden rounded-full border-2 border-white/10 bg-surface animate-photo-glow sm:h-[170px] sm:w-[170px]">
+          <div className="relative flex h-[150px] w-[150px] items-center justify-center overflow-hidden rounded-full border-2 border-border-subtle bg-surface animate-photo-glow sm:h-[170px] sm:w-[170px]">
             <img
               src="/images/profile.png"
               alt="Trimi"
@@ -57,15 +57,15 @@ export default function Hero() {
           </div>
         </div>
 
-        <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl md:text-6xl">
+        <h1 className="text-4xl font-extrabold tracking-tight text-fg sm:text-5xl md:text-6xl">
           Hi, I'm <span className="text-gradient animate-name-glow">Trimi</span>
         </h1>
 
-        <p className="mt-4 text-lg font-medium text-slate-300 sm:text-xl">
+        <p className="mt-4 text-lg font-medium text-fg-secondary sm:text-xl">
           Full-Stack Developer &amp; App Maker
         </p>
 
-        <p className="mx-auto mt-5 max-w-xl text-balance text-sm leading-relaxed text-slate-400 sm:text-base">
+        <p className="mx-auto mt-5 max-w-xl text-balance text-sm leading-relaxed text-fg-muted sm:text-base">
           I build modern web and mobile applications with clean code, useful features, and great
           user experiences.
         </p>
@@ -82,7 +82,7 @@ export default function Hero() {
             href="https://github.com/lvrl3e"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex w-full items-center justify-center gap-2 rounded-full border border-white/15 bg-white/[0.02] px-7 py-3.5 text-sm font-semibold text-slate-200 transition-all duration-300 hover:border-violet/50 hover:bg-white/5 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] sm:w-auto"
+            className="flex w-full items-center justify-center gap-2 rounded-full border border-border-strong bg-tint-1 px-7 py-3.5 text-sm font-semibold text-fg-secondary transition-all duration-300 hover:border-violet/50 hover:bg-tint-2 hover:shadow-[0_0_20px_rgba(139,92,246,0.2)] sm:w-auto"
           >
             <GithubIcon size={17} />
             View Code
@@ -93,7 +93,7 @@ export default function Hero() {
       <button
         onClick={() => scrollTo("about")}
         aria-label="Scroll down"
-        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-slate-500 transition-colors hover:text-slate-300"
+        className="absolute bottom-8 left-1/2 z-10 flex -translate-x-1/2 flex-col items-center gap-2 text-fg-subtle transition-colors hover:text-fg-secondary"
       >
         <span className="text-[11px] font-medium tracking-[0.2em]">SCROLL DOWN</span>
         <ChevronDown size={18} className="animate-bounce-slow" />

@@ -3,10 +3,20 @@
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 
-  --color-bg: #030712;
-  --color-bg-soft: #05080f;
-  --color-surface: #0a0f1c;
-  --color-border-soft: rgba(148, 163, 184, 0.12);
+  --color-bg: var(--t-bg);
+  --color-bg-soft: var(--t-bg-soft);
+  --color-surface: var(--t-surface);
+  --color-fg: var(--t-fg);
+  --color-fg-secondary: var(--t-fg-secondary);
+  --color-fg-muted: var(--t-fg-muted);
+  --color-fg-subtle: var(--t-fg-subtle);
+  --color-fg-faint: var(--t-fg-faint);
+  --color-border-subtle: var(--t-border-subtle);
+  --color-border-subtle-2: var(--t-border-subtle-2);
+  --color-border-strong: var(--t-border-strong);
+  --color-tint-1: var(--t-tint-1);
+  --color-tint-2: var(--t-tint-2);
+  --color-star: var(--t-star);
 
   --color-blue: #3b82f6;
   --color-blue-bright: #60a5fa;
@@ -87,8 +97,50 @@
 }
 
 @layer base {
+  :root {
+    --t-bg: #030712;
+    --t-bg-soft: #05080f;
+    --t-surface: #0a0f1c;
+    --t-fg: #ffffff;
+    --t-fg-secondary: #e2e8f0;
+    --t-fg-muted: #94a3b8;
+    --t-fg-subtle: #64748b;
+    --t-fg-faint: #475569;
+    --t-border-subtle: rgba(255, 255, 255, 0.1);
+    --t-border-subtle-2: rgba(255, 255, 255, 0.05);
+    --t-border-strong: rgba(255, 255, 255, 0.15);
+    --t-tint-1: rgba(255, 255, 255, 0.025);
+    --t-tint-2: rgba(255, 255, 255, 0.045);
+    --t-star: #ffffff;
+    --t-grid-line: rgba(148, 163, 184, 0.06);
+    --t-glass-bg: rgba(10, 15, 28, 0.55);
+    --t-selection-bg: rgba(139, 92, 246, 0.35);
+    --t-selection-fg: #ffffff;
+  }
+
+  [data-theme="light"] {
+    --t-bg: #f6f7fb;
+    --t-bg-soft: #eef1f7;
+    --t-surface: #ffffff;
+    --t-fg: #0f172a;
+    --t-fg-secondary: #1e293b;
+    --t-fg-muted: #475569;
+    --t-fg-subtle: #64748b;
+    --t-fg-faint: #94a3b8;
+    --t-border-subtle: rgba(15, 23, 42, 0.09);
+    --t-border-subtle-2: rgba(15, 23, 42, 0.06);
+    --t-border-strong: rgba(15, 23, 42, 0.14);
+    --t-tint-1: rgba(15, 23, 42, 0.03);
+    --t-tint-2: rgba(15, 23, 42, 0.05);
+    --t-star: #0f172a;
+    --t-grid-line: rgba(71, 85, 105, 0.08);
+    --t-glass-bg: rgba(255, 255, 255, 0.65);
+    --t-selection-bg: rgba(139, 92, 246, 0.25);
+    --t-selection-fg: #0f172a;
+  }
+
   * {
-    border-color: var(--color-border-soft);
+    border-color: var(--color-border-subtle);
   }
 
   html {
@@ -97,15 +149,16 @@
 
   body {
     background-color: var(--color-bg);
-    color: #e2e8f0;
+    color: var(--color-fg-secondary);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
   }
 
   ::selection {
-    background-color: rgba(139, 92, 246, 0.35);
-    color: #fff;
+    background-color: var(--t-selection-bg);
+    color: var(--t-selection-fg);
   }
 
   ::-webkit-scrollbar {
@@ -130,13 +183,13 @@
 
   .bg-grid {
     background-image:
-      linear-gradient(rgba(148, 163, 184, 0.06) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(148, 163, 184, 0.06) 1px, transparent 1px);
+      linear-gradient(var(--t-grid-line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--t-grid-line) 1px, transparent 1px);
     background-size: 48px 48px;
   }
 
   .glass {
-    background: rgba(10, 15, 28, 0.55);
+    background: var(--t-glass-bg);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
   }

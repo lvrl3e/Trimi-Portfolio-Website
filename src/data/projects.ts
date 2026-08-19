@@ -16,6 +16,7 @@ export const projects: Project[] = [
     tech: [],
     featured: true,
     githubUrl: "https://github.com/lvrl3e/ghost-city",
+    liveUrl: "https://ghost-city-ochre.vercel.app",
     image: "/images/covers/ghost-city-cover.svg",
   },
   {
