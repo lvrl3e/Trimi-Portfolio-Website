@@ -25,6 +25,7 @@ export const projects: Project[] = [
       "A professional options-market analytics dashboard for Gamma Exposure (GEX), dealer positioning, gamma walls, and market structure, with live data for select symbols.",
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express"],
     githubUrl: "https://github.com/lvrl3e/gexis",
+    liveUrl: "https://gexis-two.vercel.app",
     image: "/images/covers/gexis-cover.svg",
   },
   {
