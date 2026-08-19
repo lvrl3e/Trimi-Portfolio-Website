@@ -1,4 +1,4 @@
-import { Terminal } from "lucide-react";
+import { GraduationCap, Terminal } from "lucide-react";
 import Reveal from "./Reveal";
 
 const CODE_LINES = [
@@ -25,6 +25,10 @@ export default function About() {
               from the ground up. I work across frontend interfaces, backend APIs, databases, and
               mobile development, while continuously learning and improving my skills.
             </p>
+            <div className="mt-5 flex items-center gap-2.5 text-sm text-fg-muted">
+              <GraduationCap size={17} className="shrink-0 text-violet-bright" />
+              <span>Polytechnic University of the Philippines, Sta. Mesa</span>
+            </div>
           </Reveal>
 
           <Reveal delay={200}>

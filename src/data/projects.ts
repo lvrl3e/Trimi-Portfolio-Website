@@ -58,6 +58,7 @@ export const projects: Project[] = [
       "A personal finance and financial goals app that tracks accounts, income and expense transactions, and savings goals — all stored locally with SQLite, no bank credentials required.",
     tech: ["Flutter", "Dart", "SQLite"],
     githubUrl: "https://github.com/lvrl3e/bloom",
+    liveUrl: "https://bloom-beta-seven.vercel.app",
     image: "/images/covers/bloom-cover.svg",
   },
 ];
