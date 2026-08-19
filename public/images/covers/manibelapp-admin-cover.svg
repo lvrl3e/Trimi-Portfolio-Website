@@ -1,0 +1,68 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1c" />
+      <stop offset="100%" stop-color="#0d1730" />
+    </linearGradient>
+    <radialGradient id="glowBlue2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0038A8" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#0038A8" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowGold2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FCD116" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FCD116" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg2)" />
+  <circle cx="180" cy="80" r="260" fill="url(#glowBlue2)" />
+  <circle cx="1060" cy="680" r="240" fill="url(#glowGold2)" />
+
+  <!-- city grid streets (decorative, may bleed) -->
+  <g opacity="0.14" stroke="#8fa2c0" stroke-width="2">
+    <path d="M0 620 L1200 560" fill="none" />
+    <path d="M0 160 L1200 100" fill="none" />
+    <path d="M150 0 L60 750" fill="none" />
+    <path d="M980 0 L1080 750" fill="none" />
+  </g>
+
+  <!-- route path with pin (centered band) -->
+  <path d="M140 470 C 320 400, 460 500, 640 430 S 900 340, 1000 300" stroke="#FCD116" stroke-width="6" stroke-dasharray="2 18" stroke-linecap="round" fill="none" opacity="0.85" />
+  <circle cx="140" cy="470" r="9" fill="#CE1126" />
+  <g transform="translate(1000,270)">
+    <path d="M0 0C-22 0-40 18-40 40c0 30 40 66 40 66s40-36 40-66c0-22-18-40-40-40Z" fill="#CE1126" />
+    <circle cx="0" cy="38" r="14" fill="#0a0f1c" />
+  </g>
+
+  <!-- dashboard stat cards -->
+  <g transform="translate(150,190)">
+    <rect x="0" y="0" width="190" height="104" rx="16" fill="#101a30" stroke="#22304f" stroke-width="1.5" />
+    <circle cx="28" cy="32" r="11" fill="#0038A8" opacity="0.7" />
+    <rect x="22" y="56" width="56" height="9" rx="4" fill="#3a4a6b" />
+    <rect x="22" y="72" width="84" height="15" rx="6" fill="#f5f5f5" opacity="0.9" />
+
+    <rect x="210" y="0" width="190" height="104" rx="16" fill="#101a30" stroke="#22304f" stroke-width="1.5" />
+    <circle cx="238" cy="32" r="11" fill="#CE1126" opacity="0.7" />
+    <rect x="232" y="56" width="56" height="9" rx="4" fill="#3a4a6b" />
+    <rect x="232" y="72" width="84" height="15" rx="6" fill="#f5f5f5" opacity="0.9" />
+  </g>
+
+  <!-- sun rays (from the real logo) -->
+  <g transform="translate(950,470)" opacity="0.9">
+    <circle cx="0" cy="0" r="42" fill="#FCD116" />
+    <g stroke="#FCD116" stroke-width="6" stroke-linecap="round">
+      <line x1="0" y1="-64" x2="0" y2="-90" />
+      <line x1="45" y1="-45" x2="63" y2="-63" />
+      <line x1="64" y1="0" x2="90" y2="0" />
+      <line x1="45" y1="45" x2="63" y2="63" />
+      <line x1="0" y1="64" x2="0" y2="90" />
+      <line x1="-45" y1="45" x2="-63" y2="63" />
+      <line x1="-64" y1="0" x2="-90" y2="0" />
+      <line x1="-45" y1="-45" x2="-63" y2="-63" />
+    </g>
+    <circle cx="0" cy="0" r="18" fill="#0038A8" />
+  </g>
+
+  <text x="150" y="380" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#F5F5F5">ManibelApp <tspan fill="#FCD116">Admin</tspan></text>
+  <text x="152" y="418" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" letter-spacing="2" fill="#8fa2c0">TRANSPORTATION MANAGEMENT DASHBOARD</text>
+</svg>

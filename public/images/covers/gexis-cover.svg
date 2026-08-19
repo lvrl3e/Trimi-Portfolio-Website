@@ -1,0 +1,65 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e14" />
+      <stop offset="100%" stop-color="#0d1420" />
+    </linearGradient>
+    <linearGradient id="xGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F72585" />
+      <stop offset="100%" stop-color="#22C55E" />
+    </linearGradient>
+    <radialGradient id="glowPink" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#F72585" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#F72585" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowGreen" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22C55E" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#22C55E" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg)" />
+
+  <g opacity="0.06" stroke="#8fa2c0">
+    <line x1="0" y1="150" x2="1200" y2="150" stroke-width="1" />
+    <line x1="0" y1="300" x2="1200" y2="300" stroke-width="1" />
+    <line x1="0" y1="450" x2="1200" y2="450" stroke-width="1" />
+    <line x1="0" y1="600" x2="1200" y2="600" stroke-width="1" />
+    <line x1="200" y1="0" x2="200" y2="750" stroke-width="1" />
+    <line x1="400" y1="0" x2="400" y2="750" stroke-width="1" />
+    <line x1="600" y1="0" x2="600" y2="750" stroke-width="1" />
+    <line x1="800" y1="0" x2="800" y2="750" stroke-width="1" />
+    <line x1="1000" y1="0" x2="1000" y2="750" stroke-width="1" />
+  </g>
+
+  <circle cx="250" cy="200" r="220" fill="url(#glowPink)" />
+  <circle cx="950" cy="580" r="260" fill="url(#glowGreen)" />
+
+  <!-- Gamma exposure bar chart -->
+  <g transform="translate(150,520)">
+    <line x1="0" y1="0" x2="900" y2="0" stroke="#1C2430" stroke-width="2" />
+    <rect x="40" y="-40" width="46" height="40" rx="4" fill="#22C55E" opacity="0.55" />
+    <rect x="120" y="-90" width="46" height="90" rx="4" fill="#22C55E" opacity="0.75" />
+    <rect x="200" y="0" width="46" height="70" rx="4" fill="#F72585" opacity="0.75" />
+    <rect x="280" y="-170" width="46" height="170" rx="4" fill="#22C55E" />
+    <rect x="360" y="-260" width="46" height="260" rx="4" fill="#22C55E" />
+    <rect x="440" y="-55" width="46" height="55" rx="4" fill="#22C55E" opacity="0.5" />
+    <rect x="520" y="-35" width="46" height="35" rx="4" fill="#F72585" opacity="0.4" />
+    <rect x="600" y="-60" width="46" height="60" rx="4" fill="#22C55E" opacity="0.45" />
+    <line x1="360" y1="-280" x2="360" y2="60" stroke="#F5F5F5" stroke-width="1.5" stroke-dasharray="4 4" opacity="0.4" />
+  </g>
+
+  <!-- radar crosshair icon -->
+  <g transform="translate(910,340)">
+    <circle cx="0" cy="0" r="72" stroke="#1C2430" stroke-width="6" fill="#0a0e14" />
+    <circle cx="0" cy="0" r="45" stroke="#F72585" stroke-width="4" opacity="0.5" fill="none" />
+    <line x1="0" y1="-72" x2="0" y2="72" stroke="#1C2430" stroke-width="4" />
+    <line x1="-72" y1="0" x2="72" y2="0" stroke="#1C2430" stroke-width="4" />
+    <path d="M-40 45L-10 -15L20 25L50 -35" stroke="#22C55E" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <circle cx="0" cy="0" r="10" fill="#F72585" />
+  </g>
+
+  <!-- Wordmark -->
+  <text x="150" y="330" font-family="Arial, Helvetica, sans-serif" font-size="88" font-weight="800" letter-spacing="2" fill="#F5F5F5">GE<tspan fill="url(#xGrad)">X</tspan>IS</text>
+  <text x="152" y="372" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="500" letter-spacing="3" fill="#8fa2c0">GAMMA EXPOSURE INTELLIGENCE</text>
+</svg>

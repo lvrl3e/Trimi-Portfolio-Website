@@ -1,0 +1,50 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d0d0f" />
+      <stop offset="100%" stop-color="#160d14" />
+    </linearGradient>
+    <radialGradient id="glowPink5" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#E85D9E" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#E85D9E" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bg5)" />
+  <circle cx="980" cy="80" r="280" fill="url(#glowPink5)" />
+  <circle cx="180" cy="680" r="220" fill="url(#glowPink5)" opacity="0.7" />
+
+  <g opacity="0.06" stroke="#e5c9d6">
+    <line x1="0" y1="260" x2="1200" y2="260" stroke-width="1" />
+    <line x1="0" y1="480" x2="1200" y2="480" stroke-width="1" />
+  </g>
+
+  <!-- five-petal bloom mark (from real logo geometry), centered in safe band -->
+  <g transform="translate(940,375) scale(2.3)" opacity="0.95">
+    <circle cx="35.2" cy="0" r="38.4" fill="#E85D9E" fill-opacity="0.85" />
+    <circle cx="10.88" cy="33.47" r="38.4" fill="#E85D9E" fill-opacity="0.85" />
+    <circle cx="-28.48" cy="20.70" r="38.4" fill="#E85D9E" fill-opacity="0.85" />
+    <circle cx="-28.48" cy="-20.70" r="38.4" fill="#E85D9E" fill-opacity="0.85" />
+    <circle cx="10.88" cy="-33.47" r="38.4" fill="#E85D9E" fill-opacity="0.85" />
+    <circle cx="0" cy="0" r="22.4" fill="#0d0d0f" />
+  </g>
+
+  <!-- balance / growth card, centered in safe band -->
+  <g transform="translate(140,210)">
+    <rect x="0" y="0" width="330" height="150" rx="20" fill="#161318" stroke="#2c232a" stroke-width="1.5" />
+    <rect x="24" y="26" width="118" height="11" rx="5" fill="#E85D9E" opacity="0.7" />
+    <rect x="24" y="52" width="200" height="27" rx="8" fill="#f5f5f5" opacity="0.92" />
+    <path d="M24 112 C 62 96, 88 126, 124 100 S 178 80, 224 88 S 280 70, 300 54" stroke="#22C55E" stroke-width="5" fill="none" stroke-linecap="round" />
+  </g>
+
+  <!-- coin stack, within safe band -->
+  <g transform="translate(200,470)">
+    <ellipse cx="0" cy="40" rx="60" ry="17" fill="#E85D9E" opacity="0.25" />
+    <ellipse cx="0" cy="22" rx="60" ry="17" fill="#2c1a22" stroke="#E85D9E" stroke-width="3" />
+    <ellipse cx="0" cy="-4" rx="60" ry="17" fill="#2c1a22" stroke="#E85D9E" stroke-width="3" />
+    <text x="0" y="1" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="800" fill="#E85D9E" text-anchor="middle">₱</text>
+  </g>
+
+  <text x="140" y="425" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" letter-spacing="1" fill="#F5F5F5">BLOOM</text>
+  <text x="142" y="460" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="500" fill="#a89aa1">Track. Save. Bloom.</text>
+</svg>
