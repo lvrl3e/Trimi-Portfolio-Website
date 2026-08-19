@@ -1,0 +1,71 @@
+<svg width="1200" height="750" viewBox="0 0 1200 750" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGC" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070d" />
+      <stop offset="100%" stop-color="#0a0e1c" />
+    </linearGradient>
+    <linearGradient id="skylineSolid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a2540" />
+      <stop offset="100%" stop-color="#0d1424" />
+    </linearGradient>
+    <radialGradient id="glowCyanGC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="glowVioletGC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.32" />
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="750" fill="url(#bgGC)" />
+  <circle cx="950" cy="120" r="280" fill="url(#glowVioletGC)" />
+  <circle cx="220" cy="620" r="260" fill="url(#glowCyanGC)" />
+
+  <!-- radar scan arcs -->
+  <g opacity="0.18" stroke="#22d3ee" fill="none">
+    <circle cx="600" cy="600" r="160" stroke-width="1.5" />
+    <circle cx="600" cy="600" r="280" stroke-width="1.5" />
+    <circle cx="600" cy="600" r="400" stroke-width="1.5" />
+  </g>
+
+  <!-- distant real skyline (solid, present) -->
+  <g fill="url(#skylineSolid)">
+    <rect x="0" y="480" width="70" height="270" />
+    <rect x="80" y="440" width="55" height="310" />
+    <rect x="145" y="500" width="90" height="250" />
+    <rect x="245" y="410" width="60" height="340" />
+    <rect x="315" y="470" width="80" height="280" />
+    <rect x="900" y="450" width="70" height="300" />
+    <rect x="980" y="500" width="55" height="250" />
+    <rect x="1045" y="420" width="90" height="330" />
+    <rect x="1145" y="480" width="55" height="270" />
+  </g>
+
+  <!-- ghost predictive skyline (translucent, offset upward = "before it happens") -->
+  <g fill="none" stroke="#a78bfa" stroke-width="2" stroke-dasharray="5 7" opacity="0.75">
+    <rect x="360" y="330" width="70" height="230" />
+    <rect x="440" y="270" width="55" height="290" />
+    <rect x="505" y="360" width="95" height="200" />
+    <rect x="610" y="230" width="65" height="330" />
+    <rect x="685" y="310" width="80" height="250" />
+    <rect x="775" y="270" width="60" height="290" />
+    <rect x="845" y="380" width="50" height="180" />
+  </g>
+  <g opacity="0.5">
+    <circle cx="395" cy="330" r="3" fill="#a78bfa" />
+    <circle cx="467" cy="270" r="3" fill="#a78bfa" />
+    <circle cx="642" cy="230" r="3" fill="#a78bfa" />
+    <circle cx="725" cy="310" r="3" fill="#a78bfa" />
+  </g>
+
+  <!-- mobility / traffic flow lines -->
+  <path d="M0 590 C 200 560, 380 610, 560 570 S 900 520, 1200 560" stroke="#22d3ee" stroke-width="3" stroke-dasharray="2 14" fill="none" opacity="0.7" stroke-linecap="round" />
+  <path d="M0 650 C 250 630, 420 670, 640 630 S 950 600, 1200 630" stroke="#38bdf8" stroke-width="2.5" stroke-dasharray="2 12" fill="none" opacity="0.45" stroke-linecap="round" />
+  <circle cx="560" cy="570" r="5" fill="#22d3ee" />
+  <circle cx="560" cy="570" r="11" fill="#22d3ee" opacity="0.3" />
+
+  <!-- wordmark, centered in the crop-safe band -->
+  <text x="150" y="330" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="800" letter-spacing="4" fill="#F5F5F5">GHOST <tspan fill="#a78bfa">CITY</tspan></text>
+  <text x="152" y="372" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="500" fill="#8fa2c0">See the City Before It Happens</text>
+</svg>

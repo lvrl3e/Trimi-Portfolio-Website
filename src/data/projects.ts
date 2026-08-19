@@ -10,11 +10,19 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    name: "Ghost City",
+    description:
+      "An AI-powered urban simulation platform that visualizes traffic, mobility, disasters, and hypothetical city scenarios — helping users explore what could happen before it happens.",
+    tech: [],
+    featured: true,
+    githubUrl: "https://github.com/lvrl3e/ghost-city",
+    image: "/images/covers/ghost-city-cover.svg",
+  },
+  {
     name: "GEXIS",
     description:
       "A professional options-market analytics dashboard for Gamma Exposure (GEX), dealer positioning, gamma walls, and market structure, with live data for select symbols.",
     tech: ["React", "TypeScript", "Vite", "Tailwind CSS", "Node.js", "Express"],
-    featured: true,
     githubUrl: "https://github.com/lvrl3e/gexis",
     image: "/images/covers/gexis-cover.svg",
   },
