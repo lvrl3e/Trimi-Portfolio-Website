@@ -61,7 +61,7 @@ export default function Projects() {
                         className="flex items-center gap-2 rounded-full bg-gradient-to-r from-blue to-violet px-5 py-2.5 text-sm font-medium text-white shadow-[0_0_20px_rgba(139,92,246,0.35)] transition-all duration-300 hover:shadow-[0_0_28px_rgba(139,92,246,0.5)]"
                       >
                         <ExternalLink size={16} />
-                        Live Demo
+                        {featured.liveLabel ?? "Live Demo"}
                       </a>
                     )}
                   </div>
@@ -111,7 +111,7 @@ export default function Projects() {
                         className="flex items-center gap-1.5 text-sm font-medium text-fg-secondary transition-all duration-300 hover:text-blue-bright"
                       >
                         <ExternalLink size={15} className="transition-transform duration-300 group-hover:-translate-y-0.5" />
-                        Live Demo
+                        {project.liveLabel ?? "Live Demo"}
                       </a>
                     )}
                   </div>

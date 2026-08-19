@@ -5,6 +5,7 @@ export interface Project {
   featured?: boolean;
   githubUrl: string;
   liveUrl?: string;
+  liveLabel?: string;
   image: string;
 }
 
@@ -35,6 +36,7 @@ export const projects: Project[] = [
     tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Leaflet", "REST API"],
     githubUrl: "https://github.com/lvrl3e/ManibelApp-Admin-Website",
     liveUrl: "https://manibela.vercel.app",
+    liveLabel: "Visit Website",
     image: "/images/covers/manibelapp-admin-cover.svg",
   },
   {
@@ -42,6 +44,8 @@ export const projects: Project[] = [
     description: "Mobile companion app for ManibelApp, built with Flutter.",
     tech: ["Flutter", "Dart"],
     githubUrl: "https://github.com/lvrl3e/ManibelApp-App",
+    liveUrl: "https://manibela.vercel.app",
+    liveLabel: "Visit Website",
     image: "/images/covers/manibelapp-mobile-cover.svg",
   },
   {
