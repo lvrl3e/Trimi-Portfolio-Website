@@ -34,6 +34,7 @@ export const projects: Project[] = [
       "Admin dashboard and management platform for ManibelApp, featuring authentication, maps, user management, monitoring, reports, and API integration.",
     tech: ["React", "TypeScript", "Node.js", "PostgreSQL", "Leaflet", "REST API"],
     githubUrl: "https://github.com/lvrl3e/ManibelApp-Admin-Website",
+    liveUrl: "https://manibela.vercel.app",
     image: "/images/covers/manibelapp-admin-cover.svg",
   },
   {
