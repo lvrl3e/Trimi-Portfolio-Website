@@ -27,4 +27,4 @@ npm run dev
 ## Content notes
 
 - Project entries (`src/data/projects.ts`) link to the real GitHub repos at `github.com/lvrl3e`; only one (`featured: true`) is shown large.
-- Skills (`src/data/skills.ts`) are limited to technologies actually used across those projects.
+- Skills (`src/data/skills.ts`) are limited to technologies actually used across those projects.   
