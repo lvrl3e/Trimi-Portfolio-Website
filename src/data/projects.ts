@@ -49,6 +49,7 @@ export const projects: Project[] = [
       "A trading performance journal for prop-firm and funded-account traders — track multiple accounts, log daily P&L, review performance through a calendar and analytics, and keep notes and screenshots for every trading day.",
     tech: ["Python", "Streamlit", "SQLite", "Plotly", "Pandas"],
     githubUrl: "https://github.com/lvrl3e/p-and-loom",
+    liveUrl: "https://p-and-loom.streamlit.app",
     image: "/images/covers/ploom-cover.svg",
   },
   {
