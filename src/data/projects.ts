@@ -66,4 +66,13 @@ export const projects: Project[] = [
     liveUrl: "https://bloom-beta-seven.vercel.app",
     image: "/images/covers/bloom-cover.svg",
   },
+  {
+    name: "Morrow",
+    description:
+      "A simulated proprietary trading platform concept — structured evaluation challenges, transparent risk rules, and a professional trading dashboard. A design and engineering portfolio project, not a real financial service.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    githubUrl: "https://github.com/lvrl3e/morrow",
+    liveUrl: "https://morrow-gilt.vercel.app",
+    image: "/images/covers/morrow-cover.svg",
+  },
 ];
